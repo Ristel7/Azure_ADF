@@ -1,0 +1,36 @@
+{
+	"name": "ProductsfromSQL",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ProductsfromSQL",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Product_ID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Product_Name",
+				"type": "varchar"
+			},
+			{
+				"name": "Category",
+				"type": "varchar"
+			},
+			{
+				"name": "Price",
+				"type": "decimal",
+				"precision": 10,
+				"scale": 2
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Products"
+		}
+	}
+}

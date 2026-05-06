@@ -1,0 +1,45 @@
+{
+	"name": "JsonfromGIT",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "JSONfromGITHUB",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"customer_id": {
+					"type": "string"
+				},
+				"name": {
+					"type": "string"
+				},
+				"age": {
+					"type": "integer"
+				},
+				"gender": {
+					"type": "string"
+				},
+				"city": {
+					"type": "string"
+				},
+				"membership": {
+					"type": "string"
+				},
+				"purchase_amount": {
+					"type": "integer"
+				},
+				"last_visit": {
+					"type": "string"
+				}
+			}
+		}
+	}
+}

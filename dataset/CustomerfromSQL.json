@@ -1,0 +1,34 @@
+{
+	"name": "CustomerfromSQL",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Customers",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Customer_ID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Customer_Name",
+				"type": "varchar"
+			},
+			{
+				"name": "City",
+				"type": "varchar"
+			},
+			{
+				"name": "Membership",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Customers"
+		}
+	}
+}

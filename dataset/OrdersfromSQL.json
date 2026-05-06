@@ -1,0 +1,47 @@
+{
+	"name": "OrdersfromSQL",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "OrdersfromSQL",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Order_ID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Customer_ID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Product_ID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Quantity",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Order_Date",
+				"type": "date"
+			},
+			{
+				"name": "Total_Amount",
+				"type": "decimal",
+				"precision": 10,
+				"scale": 2
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Orders"
+		}
+	}
+}
