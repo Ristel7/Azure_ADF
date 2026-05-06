@@ -1,1 +1,502 @@
-
+[
+  {
+    "customer_id": "CUST001",
+    "name": "Aarav Sharma",
+    "age": 24,
+    "gender": "Male",
+    "city": "Delhi",
+    "membership": "Gold",
+    "purchase_amount": 3200,
+    "last_visit": "2026-04-21"
+  },
+  {
+    "customer_id": "CUST002",
+    "name": "Priya Verma",
+    "age": 29,
+    "gender": "Female",
+    "city": "Mumbai",
+    "membership": "Silver",
+    "purchase_amount": 1800,
+    "last_visit": "2026-04-18"
+  },
+  {
+    "customer_id": "CUST003",
+    "name": "Rohan Gupta",
+    "age": 35,
+    "gender": "Male",
+    "city": "Bhopal",
+    "membership": "Platinum",
+    "purchase_amount": 7200,
+    "last_visit": "2026-04-19"
+  },
+  {
+    "customer_id": "CUST004",
+    "name": "Sneha Patel",
+    "age": 27,
+    "gender": "Female",
+    "city": "Ahmedabad",
+    "membership": "Gold",
+    "purchase_amount": 4100,
+    "last_visit": "2026-04-15"
+  },
+  {
+    "customer_id": "CUST005",
+    "name": "Karan Singh",
+    "age": 31,
+    "gender": "Male",
+    "city": "Jaipur",
+    "membership": "Silver",
+    "purchase_amount": 2400,
+    "last_visit": "2026-04-12"
+  },
+  {
+    "customer_id": "CUST006",
+    "name": "Ananya Roy",
+    "age": 22,
+    "gender": "Female",
+    "city": "Kolkata",
+    "membership": "Gold",
+    "purchase_amount": 3600,
+    "last_visit": "2026-04-20"
+  },
+  {
+    "customer_id": "CUST007",
+    "name": "Vikram Joshi",
+    "age": 38,
+    "gender": "Male",
+    "city": "Pune",
+    "membership": "Platinum",
+    "purchase_amount": 8500,
+    "last_visit": "2026-04-14"
+  },
+  {
+    "customer_id": "CUST008",
+    "name": "Neha Kapoor",
+    "age": 26,
+    "gender": "Female",
+    "city": "Chandigarh",
+    "membership": "Silver",
+    "purchase_amount": 2200,
+    "last_visit": "2026-04-16"
+  },
+  {
+    "customer_id": "CUST009",
+    "name": "Rahul Mehta",
+    "age": 33,
+    "gender": "Male",
+    "city": "Surat",
+    "membership": "Gold",
+    "purchase_amount": 4300,
+    "last_visit": "2026-04-11"
+  },
+  {
+    "customer_id": "CUST010",
+    "name": "Pooja Nair",
+    "age": 30,
+    "gender": "Female",
+    "city": "Hyderabad",
+    "membership": "Platinum",
+    "purchase_amount": 9100,
+    "last_visit": "2026-04-17"
+  },
+  {
+    "customer_id": "CUST011",
+    "name": "Aditya Rao",
+    "age": 28,
+    "gender": "Male",
+    "city": "Bengaluru",
+    "membership": "Gold",
+    "purchase_amount": 3900,
+    "last_visit": "2026-04-10"
+  },
+  {
+    "customer_id": "CUST012",
+    "name": "Simran Kaur",
+    "age": 25,
+    "gender": "Female",
+    "city": "Ludhiana",
+    "membership": "Silver",
+    "purchase_amount": 1700,
+    "last_visit": "2026-04-22"
+  },
+  {
+    "customer_id": "CUST013",
+    "name": "Manish Tiwari",
+    "age": 36,
+    "gender": "Male",
+    "city": "Lucknow",
+    "membership": "Gold",
+    "purchase_amount": 5100,
+    "last_visit": "2026-04-19"
+  },
+  {
+    "customer_id": "CUST014",
+    "name": "Kavya Iyer",
+    "age": 23,
+    "gender": "Female",
+    "city": "Chennai",
+    "membership": "Silver",
+    "purchase_amount": 2800,
+    "last_visit": "2026-04-13"
+  },
+  {
+    "customer_id": "CUST015",
+    "name": "Arjun Das",
+    "age": 40,
+    "gender": "Male",
+    "city": "Kochi",
+    "membership": "Platinum",
+    "purchase_amount": 10200,
+    "last_visit": "2026-04-09"
+  },
+  {
+    "customer_id": "CUST016",
+    "name": "Meera Jain",
+    "age": 34,
+    "gender": "Female",
+    "city": "Indore",
+    "membership": "Gold",
+    "purchase_amount": 4600,
+    "last_visit": "2026-04-08"
+  },
+  {
+    "customer_id": "CUST017",
+    "name": "Sahil Yadav",
+    "age": 21,
+    "gender": "Male",
+    "city": "Patna",
+    "membership": "Silver",
+    "purchase_amount": 1500,
+    "last_visit": "2026-04-21"
+  },
+  {
+    "customer_id": "CUST018",
+    "name": "Nikita Sinha",
+    "age": 32,
+    "gender": "Female",
+    "city": "Ranchi",
+    "membership": "Gold",
+    "purchase_amount": 3700,
+    "last_visit": "2026-04-18"
+  },
+  {
+    "customer_id": "CUST019",
+    "name": "Deepak Kumar",
+    "age": 39,
+    "gender": "Male",
+    "city": "Kanpur",
+    "membership": "Platinum",
+    "purchase_amount": 8800,
+    "last_visit": "2026-04-20"
+  },
+  {
+    "customer_id": "CUST020",
+    "name": "Riya Malhotra",
+    "age": 27,
+    "gender": "Female",
+    "city": "Noida",
+    "membership": "Gold",
+    "purchase_amount": 4400,
+    "last_visit": "2026-04-14"
+  },
+  {
+    "customer_id": "CUST021",
+    "name": "Abhishek Pandey",
+    "age": 30,
+    "gender": "Male",
+    "city": "Varanasi",
+    "membership": "Silver",
+    "purchase_amount": 2600,
+    "last_visit": "2026-04-13"
+  },
+  {
+    "customer_id": "CUST022",
+    "name": "Ishita Ghosh",
+    "age": 24,
+    "gender": "Female",
+    "city": "Kolkata",
+    "membership": "Gold",
+    "purchase_amount": 3100,
+    "last_visit": "2026-04-11"
+  },
+  {
+    "customer_id": "CUST023",
+    "name": "Yash Agarwal",
+    "age": 29,
+    "gender": "Male",
+    "city": "Agra",
+    "membership": "Silver",
+    "purchase_amount": 2300,
+    "last_visit": "2026-04-17"
+  },
+  {
+    "customer_id": "CUST024",
+    "name": "Tanvi Shah",
+    "age": 31,
+    "gender": "Female",
+    "city": "Vadodara",
+    "membership": "Gold",
+    "purchase_amount": 4200,
+    "last_visit": "2026-04-22"
+  },
+  {
+    "customer_id": "CUST025",
+    "name": "Harsh Vardhan",
+    "age": 37,
+    "gender": "Male",
+    "city": "Nagpur",
+    "membership": "Platinum",
+    "purchase_amount": 7900,
+    "last_visit": "2026-04-16"
+  },
+  {
+    "customer_id": "CUST026",
+    "name": "Aisha Khan",
+    "age": 28,
+    "gender": "Female",
+    "city": "Bhopal",
+    "membership": "Gold",
+    "purchase_amount": 3500,
+    "last_visit": "2026-04-15"
+  },
+  {
+    "customer_id": "CUST027",
+    "name": "Mohit Arora",
+    "age": 33,
+    "gender": "Male",
+    "city": "Delhi",
+    "membership": "Silver",
+    "purchase_amount": 2700,
+    "last_visit": "2026-04-19"
+  },
+  {
+    "customer_id": "CUST028",
+    "name": "Shreya Pillai",
+    "age": 26,
+    "gender": "Female",
+    "city": "Mumbai",
+    "membership": "Gold",
+    "purchase_amount": 4900,
+    "last_visit": "2026-04-10"
+  },
+  {
+    "customer_id": "CUST029",
+    "name": "Nitin Soni",
+    "age": 41,
+    "gender": "Male",
+    "city": "Jaipur",
+    "membership": "Platinum",
+    "purchase_amount": 9500,
+    "last_visit": "2026-04-12"
+  },
+  {
+    "customer_id": "CUST030",
+    "name": "Radhika Sen",
+    "age": 23,
+    "gender": "Female",
+    "city": "Pune",
+    "membership": "Silver",
+    "purchase_amount": 1900,
+    "last_visit": "2026-04-18"
+  },
+  {
+    "customer_id": "CUST031",
+    "name": "Aman Chawla",
+    "age": 35,
+    "gender": "Male",
+    "city": "Gurgaon",
+    "membership": "Gold",
+    "purchase_amount": 5200,
+    "last_visit": "2026-04-20"
+  },
+  {
+    "customer_id": "CUST032",
+    "name": "Payal Deshmukh",
+    "age": 27,
+    "gender": "Female",
+    "city": "Nashik",
+    "membership": "Silver",
+    "purchase_amount": 2100,
+    "last_visit": "2026-04-14"
+  },
+  {
+    "customer_id": "CUST033",
+    "name": "Ritesh Yadav",
+    "age": 32,
+    "gender": "Male",
+    "city": "Patna",
+    "membership": "Gold",
+    "purchase_amount": 4300,
+    "last_visit": "2026-04-11"
+  },
+  {
+    "customer_id": "CUST034",
+    "name": "Sonal Gupta",
+    "age": 29,
+    "gender": "Female",
+    "city": "Indore",
+    "membership": "Platinum",
+    "purchase_amount": 8400,
+    "last_visit": "2026-04-09"
+  },
+  {
+    "customer_id": "CUST035",
+    "name": "Vivek Sharma",
+    "age": 38,
+    "gender": "Male",
+    "city": "Lucknow",
+    "membership": "Gold",
+    "purchase_amount": 6100,
+    "last_visit": "2026-04-08"
+  },
+  {
+    "customer_id": "CUST036",
+    "name": "Pallavi Joshi",
+    "age": 25,
+    "gender": "Female",
+    "city": "Bengaluru",
+    "membership": "Silver",
+    "purchase_amount": 2400,
+    "last_visit": "2026-04-21"
+  },
+  {
+    "customer_id": "CUST037",
+    "name": "Ankit Sharma",
+    "age": 31,
+    "gender": "Male",
+    "city": "Chennai",
+    "membership": "Gold",
+    "purchase_amount": 3900,
+    "last_visit": "2026-04-15"
+  },
+  {
+    "customer_id": "CUST038",
+    "name": "Naina Kapoor",
+    "age": 28,
+    "gender": "Female",
+    "city": "Noida",
+    "membership": "Platinum",
+    "purchase_amount": 7700,
+    "last_visit": "2026-04-18"
+  },
+  {
+    "customer_id": "CUST039",
+    "name": "Kunal Mishra",
+    "age": 34,
+    "gender": "Male",
+    "city": "Surat",
+    "membership": "Gold",
+    "purchase_amount": 4500,
+    "last_visit": "2026-04-13"
+  },
+  {
+    "customer_id": "CUST040",
+    "name": "Ira Bhatt",
+    "age": 24,
+    "gender": "Female",
+    "city": "Ahmedabad",
+    "membership": "Silver",
+    "purchase_amount": 2000,
+    "last_visit": "2026-04-22"
+  },
+  {
+    "customer_id": "CUST041",
+    "name": "Rajat Jain",
+    "age": 36,
+    "gender": "Male",
+    "city": "Udaipur",
+    "membership": "Gold",
+    "purchase_amount": 5300,
+    "last_visit": "2026-04-20"
+  },
+  {
+    "customer_id": "CUST042",
+    "name": "Divya Arora",
+    "age": 30,
+    "gender": "Female",
+    "city": "Delhi",
+    "membership": "Platinum",
+    "purchase_amount": 8900,
+    "last_visit": "2026-04-14"
+  },
+  {
+    "customer_id": "CUST043",
+    "name": "Saurabh Roy",
+    "age": 33,
+    "gender": "Male",
+    "city": "Kolkata",
+    "membership": "Gold",
+    "purchase_amount": 4700,
+    "last_visit": "2026-04-16"
+  },
+  {
+    "customer_id": "CUST044",
+    "name": "Muskan Ali",
+    "age": 22,
+    "gender": "Female",
+    "city": "Hyderabad",
+    "membership": "Silver",
+    "purchase_amount": 1800,
+    "last_visit": "2026-04-17"
+  },
+  {
+    "customer_id": "CUST045",
+    "name": "Gaurav Bansal",
+    "age": 39,
+    "gender": "Male",
+    "city": "Jaipur",
+    "membership": "Platinum",
+    "purchase_amount": 9700,
+    "last_visit": "2026-04-12"
+  },
+  {
+    "customer_id": "CUST046",
+    "name": "Aditi Singh",
+    "age": 27,
+    "gender": "Female",
+    "city": "Pune",
+    "membership": "Gold",
+    "purchase_amount": 3400,
+    "last_visit": "2026-04-11"
+  },
+  {
+    "customer_id": "CUST047",
+    "name": "Tarun Khanna",
+    "age": 35,
+    "gender": "Male",
+    "city": "Mumbai",
+    "membership": "Silver",
+    "purchase_amount": 2900,
+    "last_visit": "2026-04-18"
+  },
+  {
+    "customer_id": "CUST048",
+    "name": "Ruchi Sinha",
+    "age": 31,
+    "gender": "Female",
+    "city": "Patna",
+    "membership": "Gold",
+    "purchase_amount": 4300,
+    "last_visit": "2026-04-20"
+  },
+  {
+    "customer_id": "CUST049",
+    "name": "Dev Malhotra",
+    "age": 42,
+    "gender": "Male",
+    "city": "Gurgaon",
+    "membership": "Platinum",
+    "purchase_amount": 11500,
+    "last_visit": "2026-04-19"
+  },
+  {
+    "customer_id": "CUST050",
+    "name": "Sanya Mehra",
+    "age": 26,
+    "gender": "Female",
+    "city": "Bengaluru",
+    "membership": "Gold",
+    "purchase_amount": 3800,
+    "last_visit": "2026-04-22"
+  }
+]
