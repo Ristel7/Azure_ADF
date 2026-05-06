@@ -17,6 +17,27 @@
 		"AzureSqlDatabase3_password": {
 			"value": ""
 		},
+		"Customers_password": {
+			"value": ""
+		},
+		"CustomerstoDataLake_accountKey": {
+			"value": ""
+		},
+		"JSON to DataLake_accountKey": {
+			"value": ""
+		},
+		"OrdersfromSQL_password": {
+			"value": ""
+		},
+		"OrderstoDataLake_accountKey": {
+			"value": ""
+		},
+		"Products to Data Lake_accountKey": {
+			"value": ""
+		},
+		"ProductsfromSQL_password": {
+			"value": ""
+		},
 		"SqlServer1_password": {
 			"value": ""
 		},
@@ -48,6 +69,48 @@
 			"value": "Priyanshudatabase"
 		},
 		"AzureSqlDatabase3_properties_typeProperties_userName": {
+			"value": "Priyanshu"
+		},
+		"Customers_properties_typeProperties_server": {
+			"value": "ristelserver.database.windows.net"
+		},
+		"Customers_properties_typeProperties_database": {
+			"value": "risteldatabase"
+		},
+		"Customers_properties_typeProperties_userName": {
+			"value": "Priyanshu"
+		},
+		"CustomerstoDataLake_properties_typeProperties_url": {
+			"value": "https://ristelstorage.dfs.core.windows.net/"
+		},
+		"JSON to DataLake_properties_typeProperties_url": {
+			"value": "https://ristelstorage.dfs.core.windows.net/"
+		},
+		"JSONfromGITHUB_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/Ristel7/Azure_ADF/main/Customers.json"
+		},
+		"OrdersfromSQL_properties_typeProperties_server": {
+			"value": "ristelserver.database.windows.net"
+		},
+		"OrdersfromSQL_properties_typeProperties_database": {
+			"value": "risteldatabase"
+		},
+		"OrdersfromSQL_properties_typeProperties_userName": {
+			"value": "Priyanshu"
+		},
+		"OrderstoDataLake_properties_typeProperties_url": {
+			"value": "https://ristelstorage.dfs.core.windows.net/"
+		},
+		"Products to Data Lake_properties_typeProperties_url": {
+			"value": "https://ristelstorage.dfs.core.windows.net/"
+		},
+		"ProductsfromSQL_properties_typeProperties_server": {
+			"value": "ristelserver.database.windows.net"
+		},
+		"ProductsfromSQL_properties_typeProperties_database": {
+			"value": "risteldatabase"
+		},
+		"ProductsfromSQL_properties_typeProperties_userName": {
 			"value": "Priyanshu"
 		},
 		"SqlServer1_properties_typeProperties_server": {

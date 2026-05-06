@@ -23,6 +23,34 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'AzureSqlDatabase3'"
 		},
+		"Customers_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'Customers'"
+		},
+		"CustomerstoDataLake_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'CustomerstoDataLake'"
+		},
+		"JSON to DataLake_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'JSON to DataLake'"
+		},
+		"OrdersfromSQL_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'OrdersfromSQL'"
+		},
+		"OrderstoDataLake_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'OrderstoDataLake'"
+		},
+		"Products to Data Lake_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'Products to Data Lake'"
+		},
+		"ProductsfromSQL_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'ProductsfromSQL'"
+		},
 		"SqlServer1_password": {
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'SqlServer1'"
@@ -64,6 +92,62 @@
 			"defaultValue": "Priyanshudatabase"
 		},
 		"AzureSqlDatabase3_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "Priyanshu"
+		},
+		"Customers_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "ristelserver.database.windows.net"
+		},
+		"Customers_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "risteldatabase"
+		},
+		"Customers_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "Priyanshu"
+		},
+		"CustomerstoDataLake_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://ristelstorage.dfs.core.windows.net/"
+		},
+		"JSON to DataLake_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://ristelstorage.dfs.core.windows.net/"
+		},
+		"JSONfromGITHUB_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://raw.githubusercontent.com/Ristel7/Azure_ADF/main/Customers.json"
+		},
+		"OrdersfromSQL_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "ristelserver.database.windows.net"
+		},
+		"OrdersfromSQL_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "risteldatabase"
+		},
+		"OrdersfromSQL_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "Priyanshu"
+		},
+		"OrderstoDataLake_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://ristelstorage.dfs.core.windows.net/"
+		},
+		"Products to Data Lake_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://ristelstorage.dfs.core.windows.net/"
+		},
+		"ProductsfromSQL_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "ristelserver.database.windows.net"
+		},
+		"ProductsfromSQL_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "risteldatabase"
+		},
+		"ProductsfromSQL_properties_typeProperties_userName": {
 			"type": "string",
 			"defaultValue": "Priyanshu"
 		},
@@ -118,6 +202,27 @@
 					"AzureSqlDatabase3_password": {
 						"value": "[parameters('AzureSqlDatabase3_password')]"
 					},
+					"Customers_password": {
+						"value": "[parameters('Customers_password')]"
+					},
+					"CustomerstoDataLake_accountKey": {
+						"value": "[parameters('CustomerstoDataLake_accountKey')]"
+					},
+					"JSON to DataLake_accountKey": {
+						"value": "[parameters('JSON to DataLake_accountKey')]"
+					},
+					"OrdersfromSQL_password": {
+						"value": "[parameters('OrdersfromSQL_password')]"
+					},
+					"OrderstoDataLake_accountKey": {
+						"value": "[parameters('OrderstoDataLake_accountKey')]"
+					},
+					"Products to Data Lake_accountKey": {
+						"value": "[parameters('Products to Data Lake_accountKey')]"
+					},
+					"ProductsfromSQL_password": {
+						"value": "[parameters('ProductsfromSQL_password')]"
+					},
 					"SqlServer1_password": {
 						"value": "[parameters('SqlServer1_password')]"
 					},
@@ -151,6 +256,48 @@
 					"AzureSqlDatabase3_properties_typeProperties_userName": {
 						"value": "[parameters('AzureSqlDatabase3_properties_typeProperties_userName')]"
 					},
+					"Customers_properties_typeProperties_server": {
+						"value": "[parameters('Customers_properties_typeProperties_server')]"
+					},
+					"Customers_properties_typeProperties_database": {
+						"value": "[parameters('Customers_properties_typeProperties_database')]"
+					},
+					"Customers_properties_typeProperties_userName": {
+						"value": "[parameters('Customers_properties_typeProperties_userName')]"
+					},
+					"CustomerstoDataLake_properties_typeProperties_url": {
+						"value": "[parameters('CustomerstoDataLake_properties_typeProperties_url')]"
+					},
+					"JSON to DataLake_properties_typeProperties_url": {
+						"value": "[parameters('JSON to DataLake_properties_typeProperties_url')]"
+					},
+					"JSONfromGITHUB_properties_typeProperties_url": {
+						"value": "[parameters('JSONfromGITHUB_properties_typeProperties_url')]"
+					},
+					"OrdersfromSQL_properties_typeProperties_server": {
+						"value": "[parameters('OrdersfromSQL_properties_typeProperties_server')]"
+					},
+					"OrdersfromSQL_properties_typeProperties_database": {
+						"value": "[parameters('OrdersfromSQL_properties_typeProperties_database')]"
+					},
+					"OrdersfromSQL_properties_typeProperties_userName": {
+						"value": "[parameters('OrdersfromSQL_properties_typeProperties_userName')]"
+					},
+					"OrderstoDataLake_properties_typeProperties_url": {
+						"value": "[parameters('OrderstoDataLake_properties_typeProperties_url')]"
+					},
+					"Products to Data Lake_properties_typeProperties_url": {
+						"value": "[parameters('Products to Data Lake_properties_typeProperties_url')]"
+					},
+					"ProductsfromSQL_properties_typeProperties_server": {
+						"value": "[parameters('ProductsfromSQL_properties_typeProperties_server')]"
+					},
+					"ProductsfromSQL_properties_typeProperties_database": {
+						"value": "[parameters('ProductsfromSQL_properties_typeProperties_database')]"
+					},
+					"ProductsfromSQL_properties_typeProperties_userName": {
+						"value": "[parameters('ProductsfromSQL_properties_typeProperties_userName')]"
+					},
 					"SqlServer1_properties_typeProperties_server": {
 						"value": "[parameters('SqlServer1_properties_typeProperties_server')]"
 					},
@@ -163,6 +310,26 @@
 				}
 			},
 			"dependsOn": []
+		},
+		{
+			"name": "Priyanshufactory_ArmTemplate_1",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2024-03-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_1.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					}
+				}
+			},
+			"dependsOn": [
+				"[resourceId('Microsoft.Resources/deployments', 'Priyanshufactory_ArmTemplate_0')]"
+			]
 		}
 	]
 }
