@@ -1,0 +1,12 @@
+{
+	"name": "JSONfromGITHUB",
+	"properties": {
+		"annotations": [],
+		"type": "HttpServer",
+		"typeProperties": {
+			"url": "https://raw.githubusercontent.com/Ristel7/Azure_ADF/main/Customers.json",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
