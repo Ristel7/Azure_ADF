@@ -1671,26 +1671,6 @@ A future version can integrate data cataloging and governance capabilities.
 
 ---
 
-# 🎤 Interview Explanation
-
-If asked:
-
-### "Explain your Azure Data Factory project."
-
-A good answer would be:
-
-> I developed a cloud-based ETL pipeline using Azure Data Factory. The main objective was to integrate data from multiple sources such as Azure SQL and JSON-based data and move it into Azure Data Lake Storage.
->
-> I configured Linked Services to establish connections with the source and destination systems. Then I created datasets representing customers, products, orders, JSON data, and Parquet destinations.
->
-> I used Copy Data activities inside Azure Data Factory pipelines to perform the data movement and configured dependencies between activities to control the execution order.
->
-> The processed data is stored in Azure Data Lake Storage in Parquet format, which makes it suitable for analytical workloads.
->
-> Through this project, I gained practical experience in Azure Data Factory, ETL, cloud data integration, Data Lake architecture, SQL integration, JSON ingestion, Parquet storage, and pipeline orchestration.
-
----
-
 # 📌 Key Skills
 
 This project demonstrates practical knowledge of:
@@ -1783,7 +1763,7 @@ SOFTWARE.
 
 # 👨‍💻 Author
 
-## Ristel
+## Priyanshu Kumar
 
 **Computer Science Engineering Student**
 
