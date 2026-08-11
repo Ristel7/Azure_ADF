@@ -93,7 +93,8 @@ The main objectives of this project are:
                  └──────────────────────────┘
 
 
-🔄 ETL Workflow
+## 🔄 ETL Workflow
+
 1. Extract
 
 Data is extracted from multiple sources including:
@@ -113,7 +114,8 @@ The processed data is written to Azure Data Lake Storage using Parquet format.
 
 Parquet provides a columnar storage format that is well suited for analytical workloads.
 
-📂 Project Structure
+## 📂 Project Structure
+
 Azure_ADF/
 │
 ├── 📁 dataset/
@@ -146,7 +148,8 @@ Azure_ADF/
 ├── 📄 publish_config.json
 └── 📄 index.html
 
-🛠️ Technologies Used
+## 🛠️ Technologies Used
+
 | Technology                   | Purpose                                |
 | ---------------------------- | -------------------------------------- |
 | Microsoft Azure              | Cloud platform                         |
