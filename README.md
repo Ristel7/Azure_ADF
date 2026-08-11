@@ -115,7 +115,7 @@ The processed data is written to Azure Data Lake Storage using Parquet format.
 Parquet provides a columnar storage format that is well suited for analytical workloads.
 
 ## 📂 Project Structure
-
+```text
 Azure_ADF/
 │
 ├── 📁 dataset/
