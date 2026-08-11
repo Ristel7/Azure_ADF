@@ -53,7 +53,7 @@ The main objectives of this project are:
 
 ## 🏗️ Architecture
 
-```text
+
                     ┌──────────────────────┐
                     │     Data Sources     │
                     └──────────┬───────────┘
