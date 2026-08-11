@@ -1,0 +1,22 @@
+
+### One thing I'd change in your repository
+
+Right now GitHub shows **No description, website, or topics** for the repository. :contentReference[oaicite:3]{index=3}
+
+Add this as the repository description:
+
+> **End-to-end Azure Data Factory ETL pipeline for integrating SQL and JSON data into Azure Data Lake Storage using Parquet.**
+
+And add these topics:
+
+```text
+azure
+azure-data-factory
+azure-data-lake
+data-engineering
+etl
+data-integration
+azure-sql
+parquet
+cloud-data-engineering
+data-pipeline
