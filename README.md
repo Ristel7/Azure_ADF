@@ -1,161 +1,146 @@
-# ☁️ Azure Data Factory ETL Pipeline
+# ☁️ Azure Data Factory ETL & Data Lake Integration Project
 
 <p align="center">
   <img src="https://img.shields.io/badge/Microsoft%20Azure-Data%20Factory-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white">
   <img src="https://img.shields.io/badge/Azure-Data%20Lake%20Storage-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white">
-  <img src="https://img.shields.io/badge/Azure%20SQL%20Database-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white">
-  <img src="https://img.shields.io/badge/Format-Parquet-4B8BBE?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Azure%20SQL%20Database-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white">
+  <img src="https://img.shields.io/badge/Apache%20Parquet-50ABF1?style=for-the-badge&logo=apache&logoColor=white">
+  <img src="https://img.shields.io/badge/JSON-000000?style=for-the-badge&logo=json&logoColor=white">
+  <img src="https://img.shields.io/badge/GitHub-Version%20Control-181717?style=for-the-badge&logo=github&logoColor=white">
 </p>
 
 <p align="center">
-  <b>A cloud-based ETL and data integration project built using Azure Data Factory.</b>
+  <b>Cloud-based ETL pipeline for integrating SQL and JSON data into Azure Data Lake Storage using Azure Data Factory.</b>
+</p>
+
+<p align="center">
+  <a href="#-overview">Overview</a> •
+  <a href="#-architecture">Architecture</a> •
+  <a href="#-etl-workflow">ETL Workflow</a> •
+  <a href="#-project-structure">Structure</a> •
+  <a href="#-installation--setup">Setup</a> •
+  <a href="#-future-enhancements">Future</a>
 </p>
 
 ---
 
-## 📌 Overview
+# 📌 Table of Contents
 
-This project demonstrates the implementation of an **ETL and data integration workflow using Microsoft Azure Data Factory**.
-
-The project is designed to extract data from different sources, move and transform it through Azure Data Factory pipelines, and store the processed data in **Parquet format in Azure Data Lake Storage**.
-
-The project includes data integration workflows for:
-
-- 👥 Customer data
-- 📦 Product data
-- 🛒 Order data
-- 📄 JSON data
-- 🗄️ Azure SQL Database sources
-- ☁️ Azure Data Lake Storage destinations
-- 🔗 Multiple Azure Data Factory linked services
-- ⚙️ Reusable datasets and pipelines
-
-The complete Azure Data Factory configuration is maintained in this repository as JSON files.
+- [Overview](#-overview)
+- [Project Objectives](#-project-objectives)
+- [Problem Statement](#-problem-statement)
+- [Solution](#-solution)
+- [Architecture](#-architecture)
+- [Architecture Components](#-architecture-components)
+- [ETL Workflow](#-etl-workflow)
+- [Data Sources](#-data-sources)
+- [Data Destinations](#-data-destinations)
+- [Azure Data Factory Components](#-azure-data-factory-components)
+- [Pipeline Overview](#-pipeline-overview)
+- [Dataset Configuration](#-dataset-configuration)
+- [Linked Services](#-linked-services)
+- [Data Transformation](#-data-transformation)
+- [Data Flow Examples](#-data-flow-examples)
+- [Project Structure](#-project-structure)
+- [Technologies Used](#-technologies-used)
+- [Prerequisites](#-prerequisites)
+- [Installation & Setup](#-installation--setup)
+- [Configuration](#-configuration)
+- [Running the Pipeline](#-running-the-pipeline)
+- [Monitoring](#-monitoring)
+- [Expected Output](#-expected-output)
+- [Data Engineering Concepts Demonstrated](#-data-engineering-concepts-demonstrated)
+- [Key Learnings](#-key-learnings)
+- [Challenges](#-challenges)
+- [Security Considerations](#-security-considerations)
+- [Best Practices](#-best-practices)
+- [Future Enhancements](#-future-enhancements)
+- [Possible Production Architecture](#-possible-production-architecture)
+- [Use Cases](#-use-cases)
+- [Project Outcomes](#-project-outcomes)
+- [Interview Explanation](#-interview-explanation)
+- [Conclusion](#-conclusion)
+- [Author](#-author)
+- [License](#-license)
 
 ---
 
-## 🎯 Project Objectives
+# 📖 Overview
 
-The main objectives of this project are:
+This project demonstrates the development of a **cloud-based ETL and data integration solution using Microsoft Azure Data Factory (ADF)**.
 
-- Understand Azure Data Factory architecture.
-- Build cloud-based ETL pipelines.
-- Connect Azure Data Factory with different data sources.
-- Extract data from Azure SQL Database.
-- Process JSON-based data sources.
-- Load data into Azure Data Lake Storage.
-- Store analytical data in Parquet format.
-- Understand datasets, linked services, and pipelines.
-- Implement dependencies between pipeline activities.
-- Maintain Azure Data Factory resources using JSON definitions.
+The objective is to build a centralized data ingestion workflow capable of extracting data from different sources, processing and transferring the data through Azure Data Factory pipelines, and storing the resulting data in **Azure Data Lake Storage** in an analytical-friendly format.
+
+The project works with multiple data entities such as:
+
+- Customers
+- Products
+- Orders
+- JSON-based data
+
+The repository contains the exported Azure Data Factory configuration required to reproduce the data integration environment, including:
+
+- Pipelines
+- Datasets
+- Linked Services
+- Factory configuration
+- Source definitions
+- Destination definitions
+- JSON configuration files
+
+The project demonstrates the practical implementation of a modern cloud data engineering workflow.
 
 ---
 
-## 🏗️ Architecture
+# 🎯 Project Objectives
 
+The major objectives of this project are:
 
-                    ┌──────────────────────┐
-                    │     Data Sources     │
-                    └──────────┬───────────┘
-                               │
-                 ┌─────────────┴─────────────┐
-                 │                           │
-                 ▼                           ▼
-        ┌─────────────────┐         ┌─────────────────┐
-        │  Azure SQL DB   │         │   JSON Source   │
-        │                 │         │   / GitHub      │
-        │ Customers       │         └────────┬────────┘
-        │ Products        │                  │
-        │ Orders          │                  │
-        └────────┬────────┘                  │
-                 │                           │
-                 └─────────────┬─────────────┘
-                               │
-                               ▼
-                 ┌──────────────────────────┐
-                 │    Azure Data Factory    │
-                 │                          │
-                 │  Linked Services         │
-                 │          ↓               │
-                 │  Datasets                │
-                 │          ↓               │
-                 │  Copy Data Activities    │
-                 │          ↓               │
-                 │  Pipeline Orchestration  │
-                 └────────────┬─────────────┘
-                              │
-                              ▼
-                 ┌──────────────────────────┐
-                 │ Azure Data Lake Storage  │
-                 │          Gen2            │
-                 │                          │
-                 │     Parquet Files        │
-                 └──────────────────────────┘
+### 1. Learn Azure Data Factory
 
+Understand how Azure Data Factory can be used to design, execute, and monitor data integration pipelines.
 
-## 🔄 ETL Workflow
+### 2. Build ETL Pipelines
 
-1. Extract
+Create pipelines capable of extracting data from different sources and loading it into cloud storage.
 
-Data is extracted from multiple sources including:
+### 3. Integrate Multiple Data Sources
 
-Azure SQL Database
-JSON-based sources
-HTTP/GitHub-based JSON data
-2. Transform
+Connect Azure Data Factory with SQL and JSON-based sources.
 
-Azure Data Factory Copy Activities handle data movement and type conversion between the source and destination datasets.
+### 4. Implement Data Lake Storage
 
-The pipelines use tabular translation and type conversion while moving structured data into the target format.
+Use Azure Data Lake Storage as a centralized destination for processed data.
 
-3. Load
+### 5. Work With Parquet
 
-The processed data is written to Azure Data Lake Storage using Parquet format.
+Store structured data in Parquet format for efficient analytical processing.
 
-Parquet provides a columnar storage format that is well suited for analytical workloads.
+### 6. Understand ADF Components
 
-## 📂 Project Structure
+Gain practical knowledge of:
+
+- Pipelines
+- Datasets
+- Linked Services
+- Copy Data Activities
+- Source and Sink configurations
+- Activity dependencies
+
+### 7. Practice Cloud Data Engineering
+
+Understand how traditional database data can be moved into a cloud-based data lake architecture.
+
+---
+
+# ❗ Problem Statement
+
+Organizations often have data distributed across multiple systems.
+
+For example:
+
 ```text
-Azure_ADF/
-│
-├── 📁 dataset/
-│   ├── AzureSqlTable1.json
-│   ├── CustomerfromSQL.json
-│   ├── DelimitedText1.json
-│   ├── JsonfromGIT.json
-│   ├── OrdersfromSQL.json
-│   ├── ProductsfromSQL.json
-│   └── Parquet*.json
-│
-├── 📁 factory/
-│   └── Priyanshufactory.json
-│
-├── 📁 linkedService/
-│   ├── AzureBlobStorage1.json
-│   ├── AzureDataLakeStorage*.json
-│   ├── AzureSqlDatabase*.json
-│   ├── Customers.json
-│   ├── OrdersfromSQL.json
-│   ├── ProductsfromSQL.json
-│   └── ...
-│
-├── 📁 pipeline/
-│   ├── Customers Data Factory.json
-│   ├── Data to DataLake.json
-│   └── pipeline2.json
-│
-├── 📄 Customers.json
-├── 📄 publish_config.json
-└── 📄 index.html
-
-## 🛠️ Technologies Used
-
-| Technology                   | Purpose                                |
-| ---------------------------- | -------------------------------------- |
-| Microsoft Azure              | Cloud platform                         |
-| Azure Data Factory           | ETL and pipeline orchestration         |
-| Azure SQL Database           | Relational data source                 |
-| Azure Data Lake Storage Gen2 | Cloud data storage                     |
-| JSON                         | Configuration and source data          |
-| Parquet                      | Analytical data storage format         |
-| GitHub                       | Version control and project management |
+Customer Data       → SQL Database
+Product Data        → SQL Database
+Order Data          → SQL Database
+External Data       → JSON / HTTP
