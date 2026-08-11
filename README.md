@@ -91,3 +91,68 @@ The main objectives of this project are:
                  │                          │
                  │     Parquet Files        │
                  └──────────────────────────┘
+
+
+🔄 ETL Workflow
+1. Extract
+
+Data is extracted from multiple sources including:
+
+Azure SQL Database
+JSON-based sources
+HTTP/GitHub-based JSON data
+2. Transform
+
+Azure Data Factory Copy Activities handle data movement and type conversion between the source and destination datasets.
+
+The pipelines use tabular translation and type conversion while moving structured data into the target format.
+
+3. Load
+
+The processed data is written to Azure Data Lake Storage using Parquet format.
+
+Parquet provides a columnar storage format that is well suited for analytical workloads.
+
+📂 Project Structure
+Azure_ADF/
+│
+├── 📁 dataset/
+│   ├── AzureSqlTable1.json
+│   ├── CustomerfromSQL.json
+│   ├── DelimitedText1.json
+│   ├── JsonfromGIT.json
+│   ├── OrdersfromSQL.json
+│   ├── ProductsfromSQL.json
+│   └── Parquet*.json
+│
+├── 📁 factory/
+│   └── Priyanshufactory.json
+│
+├── 📁 linkedService/
+│   ├── AzureBlobStorage1.json
+│   ├── AzureDataLakeStorage*.json
+│   ├── AzureSqlDatabase*.json
+│   ├── Customers.json
+│   ├── OrdersfromSQL.json
+│   ├── ProductsfromSQL.json
+│   └── ...
+│
+├── 📁 pipeline/
+│   ├── Customers Data Factory.json
+│   ├── Data to DataLake.json
+│   └── pipeline2.json
+│
+├── 📄 Customers.json
+├── 📄 publish_config.json
+└── 📄 index.html
+
+🛠️ Technologies Used
+| Technology                   | Purpose                                |
+| ---------------------------- | -------------------------------------- |
+| Microsoft Azure              | Cloud platform                         |
+| Azure Data Factory           | ETL and pipeline orchestration         |
+| Azure SQL Database           | Relational data source                 |
+| Azure Data Lake Storage Gen2 | Cloud data storage                     |
+| JSON                         | Configuration and source data          |
+| Parquet                      | Analytical data storage format         |
+| GitHub                       | Version control and project management |
